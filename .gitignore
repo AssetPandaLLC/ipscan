@@ -6,3 +6,7 @@ ipscan.iml
 /.gradle
 /build
 .DS_Store
+/bin/
+/.settings/
+/.project
+/.classpath
