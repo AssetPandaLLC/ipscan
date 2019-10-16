@@ -7,6 +7,4 @@ ipscan.iml
 /build
 .DS_Store
 /bin/
-/.settings/
-/.project
-/.classpath
+
