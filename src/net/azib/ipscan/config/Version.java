@@ -1,5 +1,5 @@
 /*
-  This is a part of Angry IP Scanner source.
+  This is a part of Asset Panda IP Scanner source.
  */
 package net.azib.ipscan.config;
 
@@ -13,7 +13,7 @@ import java.util.logging.Level;
  * @author Anton Keks
  */
 public class Version {
-	public static final String NAME = "Angry IP Scanner";
+	public static final String NAME = "Asset Panda IP Scanner";
 	
 	public static final String COPYLEFT = "© 2019 Anton Keks and contributors";
 	
@@ -43,7 +43,7 @@ public class Version {
 	private static String buildDate;
 	
 	/**
-	 * @return version of currently running Angry IP Scanner (retrieved from the jar file)
+	 * @return version of currently running Asset Panda IP Scanner (retrieved from the jar file)
 	 */
 	public static String getVersion() {
 		if (version == null) {
@@ -53,7 +53,7 @@ public class Version {
 	}
 	
 	/**
-	 * @return build date of currently running Angry IP Scanner  (retrieved from the jar file)
+	 * @return build date of currently running Asset Panda IP Scanner  (retrieved from the jar file)
 	 */
 	public static String getBuildDate() {
 		if (buildDate == null) {

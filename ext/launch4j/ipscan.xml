@@ -3,7 +3,7 @@
   <headerType>gui</headerType>
   <jar>BASENAME.jar</jar>
   <outfile>BASENAME.exe</outfile>
-  <errTitle>Angry IP Scanner</errTitle>
+  <errTitle>Asset Panda IP Scanner</errTitle>
   <priority>normal</priority>
   <downloadUrl>http://java.com/download</downloadUrl>
   <supportUrl>https://angryip.org/</supportUrl>
@@ -17,11 +17,11 @@
   <versionInfo>
     <fileVersion>3.6.0.0</fileVersion>
     <txtFileVersion>VERSION</txtFileVersion>
-    <fileDescription>Angry IP Scanner - fast and friendly network scanner</fileDescription>
+    <fileDescription>Asset Panda IP Scanner - fast and friendly network scanner</fileDescription>
     <copyright>Anton Keks</copyright>
     <productVersion>3.6.0.0</productVersion>
     <txtProductVersion>VERSION</txtProductVersion>
-    <productName>Angry IP Scanner</productName>
+    <productName>Asset Panda IP Scanner</productName>
     <internalName>ipscan</internalName>
     <originalFilename>ipscan.exe</originalFilename>
   </versionInfo>

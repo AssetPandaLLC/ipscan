@@ -1,7 +1,7 @@
 ;Installer configuration options for name, version and other items are below
 
 ;ApplicationName is the full application name shown in the installer
-!define ApplicationName "Angry IP Scanner"				
+!define ApplicationName "Asset Panda IP Scanner"
 	
 ;The name of the applications EXE file.  Used to create a shortcut and ensure it is not running during install
 !define ApplicationEXEName "ipscan.exe"
@@ -10,7 +10,7 @@
 !define FooterText "Fast and Friendly Network Scanner"	
 	
 ;DefaultDirectory is the default directory to install to within Program Files
-!define DefaultDirectory "Angry IP Scanner"
+!define DefaultDirectory "Asset Panda IP Scanner"
 	
 ;InstallerFileName is the start of the generated installer file. No spaces or invalid Windows file/directory characters.
 !define InstallerFileName "ipscan"

@@ -11,5 +11,9 @@
         <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ipscan.main" target="1.8" />
+      <module name="ipscan.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

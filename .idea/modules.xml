@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ipscan.iml" filepath="$PROJECT_DIR$/ipscan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ipscan.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ipscan.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ipscan.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ipscan.test.iml" />
     </modules>
   </component>
 </project>

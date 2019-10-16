@@ -1,4 +1,4 @@
-Summary:            Angry IP Scanner - fast and friendly network scanner
+Summary:            Asset Panda IP Scanner - fast and friendly network scanner
 Name:               ipscan
 Version:            VERSION
 Release:			1%{?dist}
@@ -10,7 +10,7 @@ Packager:			Anton Keks
 Requires:			jre >= 1.8.0
 
 %description
-Angry IP Scanner is a cross-platform network scanner written in Java.
+Asset Panda IP Scanner is a cross-platform network scanner written in Java.
 It can scan IP-based networks in any range, scan ports, and resolve
 other information.
 

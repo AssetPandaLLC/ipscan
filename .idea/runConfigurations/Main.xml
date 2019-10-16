@@ -1,5 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Main" type="Application" factoryName="Application" singleton="true">
+    <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.222-4\jre" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
     <option name="MAIN_CLASS_NAME" value="net.azib.ipscan.Main" />
     <module name="ipscan" />

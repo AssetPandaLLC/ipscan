@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Angry IP Scanner
+Name=Asset Panda IP Scanner
 Comment=Fast and friendly network scanner
 GenericName=Fast and friendly network scanner
 Exec=sh /usr/bin/ipscan
@@ -8,5 +8,5 @@ Terminal=false
 Type=Application
 Icon=ipscan
 Categories=Application;Network;Internet;
-StartupWMClass=Angry IP Scanner
+StartupWMClass=Asset Panda IP Scanner
 StartupNotify=true

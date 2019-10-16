@@ -1,5 +1,5 @@
 /*
-  This file is a part of Angry IP Scanner source code,
+  This file is a part of Asset Panda IP Scanner source code,
   see http://www.angryip.org/ for more information.
   Licensed under GPLv2.
  */
@@ -32,7 +32,7 @@ import static net.azib.ipscan.gui.util.LayoutHelper.formData;
 import static net.azib.ipscan.gui.util.LayoutHelper.icon;
 
 /**
- * Main window of Angry IP Scanner.
+ * Main window of Asset Panda IP Scanner.
  * Contains the menu, IP resultTable, status bar (with progress bar) and
  * a Composite area, which can be substituted dynamically based on
  * the selected feeder.

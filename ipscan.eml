@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/build/classes/test/ipscan"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<excludeFolder url="file://$MODULE_DIR$/.gradle"/>
+		<excludeFolder url="file://$MODULE_DIR$/build"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/classes"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/libs"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/reports"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/resources"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/test-results"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/tmp"/>
+		<excludeFolder url="file://$MODULE_DIR$/out"/>
+		<excludeFolder url="file://$MODULE_DIR$/test-coverage"/>
+		<excludeFolder url="file://$MODULE_DIR$/test-results"/>
+	</contentEntry>
+</component>

@@ -37,11 +37,15 @@ repositories {
 
 dependencies {
     compile 'com.google.dagger:dagger:2.19'
+    // https://mvnrepository.com/artifact/javax.inject/javax.inject
+	compile group: 'javax.inject', name: 'javax.inject', version: '1'
+	
     annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
     compileOnly files("lib/swt-${platform}.jar")
     compileOnly files('lib/jna.jar')
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-core:2.23.0'
+    
 }
 
 configurations {
@@ -54,11 +58,11 @@ def packageTask(def platform, def moreJars, def moreLibs, Closure doMore) {
     return tasks.create(platform, Jar) {
         dependsOn = ['classes']
         manifest {
-           attributes 'Implementation-Title': 'Angry IP Scanner',
+           attributes 'Implementation-Title': 'Asset Panda IP Scanner',
                'Implementation-Version': version,
                'Main-Class': 'net.azib.ipscan.Main',
                'Class-Path': '.',
-               'Title': 'Angry IP Scanner',
+               'Title': 'Asset Panda IP Scanner',
                'Version': version,
                'Build-Date': java.time.LocalDate.now().toString(),
                'URL': 'https://angryip.org/'
@@ -214,7 +218,7 @@ packageTask('win64', 'lib/jna-win64.jar', []) {
 
 packageTask('mac', [], []) {
     def dist = buildDir.path + '/libs'
-    def name = 'Angry IP Scanner'
+    def name = 'Asset Panda IP Scanner'
     ant.copy(todir: dist) {
         ant.fileset(dir: "ext/mac-bundle")
     }
