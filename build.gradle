@@ -37,9 +37,6 @@ repositories {
 
 dependencies {
     compile 'com.google.dagger:dagger:2.19'
-    // https://mvnrepository.com/artifact/javax.inject/javax.inject
-	compile group: 'javax.inject', name: 'javax.inject', version: '1'
-	
     annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
     compileOnly files("lib/swt-${platform}.jar")
     compileOnly files('lib/jna.jar')
