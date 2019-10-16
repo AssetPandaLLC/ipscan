@@ -6,6 +6,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="build/generated/src/main/java"/>
 	<classpathentry kind="src" path="ext/rocksaw/src/java"/>
 	<classpathentry kind="src" output="bin/main" path="config">
 		<attributes>
@@ -34,5 +35,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="con" path="ipscan.userlibraries">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="ipscan"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

@@ -48,8 +48,21 @@ dependencies {
 configurations {
     testImplementation.extendsFrom compileOnly
 }
-
-compileJava.options.annotationProcessorGeneratedSourcesDirectory = new File('build/generated')
+compileJava {
+    String relativePath = "build/generated/src/main/java"
+    sourceSets.main.java { srcDir relativePath }
+    File generatedSourceDir = project.file("build/generated/src/main/java")
+    println "Creating and configuring generated source directory $generatedSourceDir"
+    project.mkdir(generatedSourceDir)
+    options.annotationProcessorGeneratedSourcesDirectory = generatedSourceDir
+    outputs.dir(generatedSourceDir)
+    
+    doFirst {
+        // force a clean of generatedSourceDir to prevent java.lang.IllegalStateException: endPosTable already set. This shouldn't be need if using Gradle 4.8+ or Java 9+.
+        project.delete(generatedSourceDir)
+        project.mkdir(generatedSourceDir)
+    }
+}
 
 def packageTask(def platform, def moreJars, def moreLibs, Closure doMore) {
     return tasks.create(platform, Jar) {
