@@ -33,7 +33,12 @@ public class ScannerDispatcherThreadFactory {
 		this.stateMachine = stateMachine;
 		this.scannerConfig = scannerConfig;
 	}
-
+	public ScannerDispatcherThread createFreshScannerThread(Feeder feeder, ScanningProgressCallback progressCallback, ScanningResultCallback resultsCallback) {
+		ScannerDispatcherThread thread= new ScannerDispatcherThread(feeder, scanner, stateMachine, progressCallback, scanningResults, scannerConfig, resultsCallback);
+		stateMachine.transitionToNext();
+		stateMachine.startScanning();
+		return thread;
+	}
 	public ScannerDispatcherThread createScannerThread(Feeder feeder, ScanningProgressCallback progressCallback, ScanningResultCallback resultsCallback) {
 		return new ScannerDispatcherThread(feeder, scanner, stateMachine, progressCallback, scanningResults, scannerConfig, resultsCallback);
 	}
