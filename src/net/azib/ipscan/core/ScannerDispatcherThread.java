@@ -75,6 +75,7 @@ public class ScannerDispatcherThread extends Thread implements ThreadFactory, St
 
 	public void run() {
 		try {
+			progressCallback.beforeStartScanning();
 			// register this scan specific listener
 			stateMachine.addTransitionListener(this);
 			long lastNotifyTime = 0; 
