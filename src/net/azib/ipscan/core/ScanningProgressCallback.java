@@ -25,4 +25,8 @@ public interface ScanningProgressCallback {
 	 * 		is already done.
 	 */
 	void updateProgress(InetAddress currentAddress, int runningThreads, int percentageComplete);
+	
+	void afterDoneScanning(ScanningResultList resultList);
+	void beforeStartScanning();
+
 }

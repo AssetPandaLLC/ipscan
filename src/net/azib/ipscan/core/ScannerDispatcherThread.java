@@ -112,9 +112,8 @@ public class ScannerDispatcherThread extends Thread implements ThreadFactory, St
 				}
 			}
 			catch (InterruptedException e) {
-				// interrupt - end the loop
+				e.printStackTrace();
 			}
-			
 			// inform that no more addresses left
 			stateMachine.stop();
 		
@@ -140,6 +139,8 @@ public class ScannerDispatcherThread extends Thread implements ThreadFactory, St
 		finally {
 			// unregister specific listener
 			stateMachine.removeTransitionListener(this);
+			progressCallback.afterDoneScanning(scanningResultList);
+			
 		}
 	}
 	

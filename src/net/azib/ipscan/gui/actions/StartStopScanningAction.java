@@ -272,4 +272,16 @@ public class StartStopScanningAction implements SelectionListener, ScanningProgr
 		});
 	}
 
+	@Override
+	public void afterDoneScanning(ScanningResultList resultList) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeStartScanning() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
