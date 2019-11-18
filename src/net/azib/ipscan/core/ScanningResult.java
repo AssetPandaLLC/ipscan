@@ -5,12 +5,13 @@
  */
 package net.azib.ipscan.core;
 
-import net.azib.ipscan.fetchers.Fetcher;
-
 import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+
+import net.azib.ipscan.fetchers.Fetcher;
 
 /**
  * The holder of scanning result for a single IP address.
@@ -83,7 +84,11 @@ public class ScanningResult {
 	public void setValues(Object[] values) {
 		this.values = values;
 	}
-
+	public void addValue(Object value) {
+		List<Object> list = new ArrayList<Object>(Arrays.asList(values));
+		list.add(value);
+		this.values = list.toArray();
+	}
 	/**
 	 * Sets scanning result type
 	 */	
