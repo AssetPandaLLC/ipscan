@@ -123,6 +123,9 @@ public class ScanningResult {
 		
 		StringBuilder details = new StringBuilder(1024);
 		Iterator<?> iterator = getValues().iterator();
+		if(resultList ==null) {
+			return "Result List not ready Yet";
+		}
 		List<Fetcher> fetchers = resultList.getFetchers();
 		for (int i = 0; iterator.hasNext(); i++) {
 			String fetcherName = fetchers.get(i).getName();
